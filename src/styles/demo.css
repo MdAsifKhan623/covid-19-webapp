@@ -1,0 +1,151 @@
+.nav-header{
+    height: 100px;
+    margin-bottom: 20px;
+}
+header{
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+
+.card-pos-death.card {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    color: #01c5c4;
+    background-color:#e8e8e8 ;
+}
+.card-News.card{
+  padding-left:0px;
+  border-left: 6px solid #12cad6!important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.state-Card.card-body{
+  border-left: 8px solid #28df99!important;
+} 
+.vaccine-Card{
+  height:200px;
+}
+.image-covid{
+  width: 50px;
+  height: 50px;
+}
+.tabs-section{
+  font-weight: bolder;
+  font-family: Montserrat, sans-serif;
+  height:'30px';
+  border: 3px solid #f2efea;
+  border-radius: 7px;
+  margin-left: 5px;
+}
+.covid-counts{
+    color:#150485;
+    font-size: 20px;
+}
+.covid-counts-site{
+  color:green; 
+  font-weight:bolder; 
+  font-size:15px
+}
+.state-covid-counts{
+  color:whitesmoke;
+  font-size: 15px;
+  font-weight: bolder; 
+}
+.card-tab-header.card{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    color: #3adb21;
+    width: 600px;
+    background-color: #394989;
+}
+
+.continent-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    color: white;
+    width: 600px;
+    background-color: #01c5c4;
+}
+
+.country-field{
+    width:40%;
+}
+.card-subtitle{
+    color:red;
+}
+
+/*Toggle Card Styling*/
+
+
+  .my-collapsible__toggle {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 2px 2px gray;
+    border-radius: 10px;
+    border: 4px solid #bbbbbb;
+    background: transparent;
+  }
+  .my-collapsible__content {
+    overflow: hidden;
+    background-color: green;
+  }
+  
+  .my-collapsible__content-inner {
+    padding: 1rem;
+    min-height: 20rem;
+    _background: linear-gradient(lightblue, white);
+  }
+  .about-app{
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #150485;
+  }
+  .about-heading{
+    border: 10px solid lightblue;
+    margin: 10px 15px 10px;
+    border-radius: 10px;
+    padding: 20px 5px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .number {
+    font-variant-numeric: tabular-nums;
+    min-width: 3em;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .autoContainer {
+    position: relative;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: gray;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    right: 10px;
+    top: 10px;
+    width: 520px;
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    padding: 5px;
+    z-index: 1;
+  }
+  .option:hover{
+    background-color: #bbbbbb;
+  }
+  

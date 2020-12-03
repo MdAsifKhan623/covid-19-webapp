@@ -13,13 +13,14 @@ import TestingSites from './views/Testing-Sites/Testing-sites'
 import Vaccine from './views/VaccineAndNews/vaccine'
 import About from './views/about'
 function App() {
-  
+  console.log(process.env)
   return (
     <Router>
     <div className="App">
           <header>
           <Header name="Covid-19 App"/>
           </header>
+          
           <Switch>  
             <Route path={process.env.PUBLIC_URL + '/'} exact render={props=>
             <div>

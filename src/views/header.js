@@ -2,6 +2,7 @@ import React from 'react'
 import {Navbar,Nav,Form} from 'react-bootstrap'
 
 export default function Header(props){
+    console.log(process.env.PUBLIC_URL)
     return (
         <div>
             <Navbar bg="dark" variant="dark" className="nav-header">

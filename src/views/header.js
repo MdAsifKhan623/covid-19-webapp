@@ -7,13 +7,13 @@ export default function Header(props){
             <Navbar bg="dark" variant="dark" className="nav-header">
                 <Navbar.Brand href="#home" style={{"fontFamily":"sans-serif"}}>{props.name}</Navbar.Brand>
                 <Nav className="mr-auto">
-                <Nav.Link href="/" className='tabs-section'>Home</Nav.Link>
-                <Nav.Link href="/continents" className='tabs-section'>Continents</Nav.Link>
-                <Nav.Link href="/countries" className='tabs-section'>Countries</Nav.Link>
-                <Nav.Link href="/news" className='tabs-section'>News</Nav.Link>
-                <Nav.Link href="/county" className='tabs-section'>Local County Info</Nav.Link>
-                <Nav.Link href="/usstates" className='tabs-section'>US States</Nav.Link>
-                <Nav.Link href="/testing-sites" className='tabs-section'>Testing Sites</Nav.Link>
+                <Nav.Link href="/covid-19-webapp" className='tabs-section'>Home</Nav.Link>
+                <Nav.Link href="covid-19-webapp/continents" className='tabs-section'>Continents</Nav.Link>
+                <Nav.Link href="covid-19-webapp/countries" className='tabs-section'>Countries</Nav.Link>
+                <Nav.Link href="covid-19-webapp/news" className='tabs-section'>News</Nav.Link>
+                <Nav.Link href="covid-19-webapp/county" className='tabs-section'>Local County Info</Nav.Link>
+                <Nav.Link href="covid-19-webapp/usstates" className='tabs-section'>US States</Nav.Link>
+                <Nav.Link href="covid-19-webapp/testing-sites" className='tabs-section'>Testing Sites</Nav.Link>
                 </Nav>
                 <Form inline>
                 {/* <FormControl type="text" placeholder="Search" className="mr-sm-2" />

@@ -13,7 +13,6 @@ import TestingSites from './views/Testing-Sites/Testing-sites'
 import Vaccine from './views/VaccineAndNews/vaccine'
 import About from './views/about'
 function App() {
-  console.log(process.env)
   return (
     <Router>
     <div className="App">

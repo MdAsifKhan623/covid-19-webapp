@@ -21,7 +21,7 @@ function App() {
           </header>
           
           <Switch>  
-            <Route path={process.env.PUBLIC_URL + '/'} exact render={props=>
+            <Route path='/' exact render={props=>
             <div>
               <Dashboard/>
             </div>

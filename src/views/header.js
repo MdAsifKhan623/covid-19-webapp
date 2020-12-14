@@ -8,7 +8,7 @@ export default function Header(props){
             <Navbar bg="dark" variant="dark" className="nav-header">
                 <Navbar.Brand href="#home" style={{"fontFamily":"sans-serif"}}>{props.name}</Navbar.Brand>
                 <Nav className="mr-auto">
-                <Nav.Link to="/" className='tabs-section'>Home</Nav.Link>
+                <Nav.Link href="/" className='tabs-section'>Home</Nav.Link>
                 <Nav.Link href={process.env.PUBLIC_URL + "/continents"} className='tabs-section'>Continents</Nav.Link>
                 <Nav.Link href={process.env.PUBLIC_URL + '/countries'} className='tabs-section'>Countries</Nav.Link>
                 <Nav.Link href={process.env.PUBLIC_URL + '/news'} className='tabs-section'>News</Nav.Link>

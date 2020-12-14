@@ -6,7 +6,7 @@ export default function Header(props){
     return (
         <div>
             <Navbar bg="dark" variant="dark" className="nav-header">
-                <Navbar.Brand href="#home" style={{"fontFamily":"sans-serif"}}>{props.name}</Navbar.Brand>
+                <Navbar.Brand href="/" style={{"fontFamily":"sans-serif"}}>{props.name}</Navbar.Brand>
                 <Nav className="mr-auto">
                 <Nav.Link href="/" className='tabs-section'>Home</Nav.Link>
                 <Nav.Link href={process.env.PUBLIC_URL + "/continents"} className='tabs-section'>Continents</Nav.Link>

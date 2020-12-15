@@ -39,7 +39,7 @@ export default function News(){
                         )
                     })}
                 </Row>
-                {display && (<div style={{color:'green', fontWeight:'bolder' }}> <center> Unfortunately, The news data is unavailable due to API issues.</center> </div>)}
+                {display && (<div style={{color:'green', fontWeight:'bolder', textAlign:'center' }}> Unfortunately, The news data is unavailable due to API issues.</div>)}
             </Container>
             
         </div>

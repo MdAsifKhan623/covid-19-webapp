@@ -27,6 +27,7 @@ export default function News(){
                 
                 <br/>
                 <Row>
+                {console.log(newsData)}
                 {newsData.map(function(item,i){
                     return (
                     <Col key={i} xs="12" md='12'><NewsCard obj={item}/>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 // import {Button} from 'react-bootstrap'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {HashRouter as Router, Route, Switch} from 'react-router-dom'
 import Header from './views/header'
 import Dashboard from './views/dashboard'
 import News from './views/VaccineAndNews/news'

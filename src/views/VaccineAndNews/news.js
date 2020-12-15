@@ -31,15 +31,15 @@ export default function News(){
                 
                 <br/>
                 <Row>
+                    {newsData.map(function(item,i){
+                        return (
+                        <Col key={i} xs="12" md='12'><NewsCard obj={item}/>
+                        <br/>
+                        </Col>
+                        )
+                    })}
+                </Row>
                 {display && (<div style={{color:'green', fontWeight:'bolder' }}> <center> Unfortunately, The news data is unavailable due to API issues.</center> </div>)}
-                {newsData.map(function(item,i){
-                    return (
-                    <Col key={i} xs="12" md='12'><NewsCard obj={item}/>
-                    <br/>
-                    </Col>
-                    )
-                })}
-            </Row>
             </Container>
             
         </div>

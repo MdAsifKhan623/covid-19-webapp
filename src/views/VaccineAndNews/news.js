@@ -5,7 +5,7 @@ import axios from 'axios'
 import TabHeader from '../tabHeader'
 
 export default function News(){
-    let vaccineNews=<a href="/vaccine-news" style={{'textDecoration':'None'}}>Vaccine</a>
+    let vaccineNews=<a href={process.env.PUBLIC_URL + `/#/vaccine-news`} style={{'textDecoration':'None'}}>Vaccine</a>
     const [newsData, setNewsData]=useState([])
     const fetchData=(e)=>{
         axios.get('https://newsapi.org/v2/everything?q=COVID+vaccine+today&sortBy=publishedAt&apiKey=c70b84aa4fde411f808f50858fff1da2&pageSize=100&page=1')

@@ -19,7 +19,7 @@ export default function Header(props){
                 <Form inline>
                 {/* <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                 <Button variant="outline-info">Search</Button> */}
-                <Nav.Link href="/about" className='tabs-section'>About</Nav.Link>
+                <Nav.Link href={process.env.PUBLIC_URL + `/#/about`} className='tabs-section'>About</Nav.Link>
                 </Form>
             </Navbar>
         </div>

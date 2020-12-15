@@ -5,7 +5,7 @@ import axios from 'axios'
 import TabHeader from '../tabHeader'
 
 export default function Vaccine(){
-    let covidNews=<a href="/news" style={{'textDecoration':'None'}}>Covid-19 News</a>
+    let covidNews=<a href={process.env.PUBLIC_URL + `/#/news`} style={{'textDecoration':'None'}}>Covid-19 News</a>
     const [vaccineData, setVaccineData]=useState([])
     const fetchData=(e)=>{
         axios.get('https://disease.sh/v3/covid-19/vaccine')

@@ -9,7 +9,7 @@ export default function Header(props){
                 <Navbar.Brand href="/" style={{"fontFamily":"sans-serif"}}>{props.name}</Navbar.Brand>
                 <Nav className="mr-auto">
                 <Nav.Link href={process.env.PUBLIC_URL} className='tabs-section'>Home</Nav.Link>
-                <Nav.Link href={process.env.PUBLIC_URL + "/continents"} className='tabs-section'>Continents</Nav.Link>
+                <Nav.Link href={process.env.PUBLIC_URL + "/#/continents"} className='tabs-section'>Continents</Nav.Link>
                 <Nav.Link href={process.env.PUBLIC_URL + '/countries'} className='tabs-section'>Countries</Nav.Link>
                 <Nav.Link href={process.env.PUBLIC_URL + '/news'} className='tabs-section'>News</Nav.Link>
                 <Nav.Link href={process.env.PUBLIC_URL + "/county"} className='tabs-section'>Local County Info</Nav.Link>

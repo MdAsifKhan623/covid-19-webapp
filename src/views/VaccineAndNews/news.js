@@ -7,6 +7,7 @@ import TabHeader from '../tabHeader'
 export default function News(){
     let vaccineNews=<a href={process.env.PUBLIC_URL + `/#/vaccine-news`} style={{'textDecoration':'None'}}>Vaccine</a>
     const [newsData, setNewsData]=useState([])
+    const [display, setDisplay]=useState(false)
     const fetchData=(e)=>{
         axios.get('https://newsapi.org/v2/everything?q=COVID+vaccine+today&sortBy=publishedAt&apiKey=c70b84aa4fde411f808f50858fff1da2&pageSize=100&page=1')
         .then((res)=>{
@@ -15,6 +16,9 @@ export default function News(){
     }
     useEffect(()=>{
         fetchData()
+        if (newsData.length==0){
+            setDisplay(true)
+        }
     },[])
     
     return (
@@ -27,7 +31,7 @@ export default function News(){
                 
                 <br/>
                 <Row>
-                {console.log(newsData)}
+                {display && (<div> Unfortunately, The news data is unavailable. </div>)}
                 {newsData.map(function(item,i){
                     return (
                     <Col key={i} xs="12" md='12'><NewsCard obj={item}/>

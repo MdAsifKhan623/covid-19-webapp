@@ -25,6 +25,7 @@ export default function TestingSites(){
         }
         
       })
+      console.log(testingSiteData)
       e.preventDefault()
     }
     useEffect(()=>{

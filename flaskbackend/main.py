@@ -36,4 +36,5 @@ def testingSite():
         response=dynamoTable.get_item(
             Key={primary_column_name:stateName}
         )
+        response.headers.add('Access-Control-Allow-Origin', '*')
         return response

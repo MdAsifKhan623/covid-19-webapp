@@ -13,7 +13,7 @@ export default function TestingSites(){
     const wRef=useRef(null)
 
     const handleSubmit=(e)=>{
-       axios.post(`http://127.0.0.1:5000/testing`, { state:stateName.toLowerCase().replaceAll(' ','') })
+       axios.post(`https://covid19-webapp-asif.herokuapp.com/testing`, { state:stateName.toLowerCase().replaceAll(' ','') })
       .then(res => {
         if (res.data.Item===undefined){
             setDisplay(true)

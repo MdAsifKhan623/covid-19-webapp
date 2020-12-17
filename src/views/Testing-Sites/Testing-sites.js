@@ -33,12 +33,10 @@ export default function TestingSites(){
         document.addEventListener('mousedown', handleClickOutside)
         
         return ()=>{
-            console.log('removed')
             document.removeEventListener('mousedown',handleClickOutside)
         }
     },[wRef])
     const handleClickOutside = (event)=>{
-        console.log('mousedown',wRef.current.contains(event.target))
         if(wRef.current && !wRef.current.contains(event.target)){
             setDisplayAutoSearch(false)
         }

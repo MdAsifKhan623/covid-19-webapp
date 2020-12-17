@@ -107,7 +107,6 @@ export default function CovidWorldMap(){
 
     if ((Object.keys(continentData).length !== 0) && (dataset1.length === 0)){
         continentData.map((item)=>{
-            console.log(item.continent)
             dataset1.push({
                 "ID":continentDict.get(item.continent),
                 'value':item.cases,

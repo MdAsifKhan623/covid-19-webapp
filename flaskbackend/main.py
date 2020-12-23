@@ -39,3 +39,4 @@ def testingSite():
         response.headers.add('Access-Control-Allow-Origin', 'https://mdasifkhan623.github.io')
         response.headers.add("Access-Control-Allow-Headers", "X-Requested-With, content-type")
         return response
+    return stateName

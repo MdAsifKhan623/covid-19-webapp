@@ -65,7 +65,7 @@ const colorrange = {
     },
     {
         "minvalue": "20000000.0",
-        "maxvalue": "30000000.0",
+        "maxvalue": "90000000.0",
         "color": "#931a25"
     }]
 };
